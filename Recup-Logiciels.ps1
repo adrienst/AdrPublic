@@ -20,4 +20,4 @@ Foreach ($logiciel in $logiciels) {
     }
 }
 #affichage de l'array
-$Array | Sort-Object displayname 
+$Array | Sort-Object displayname | format-table -autosize
