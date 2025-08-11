@@ -33,3 +33,5 @@ $firewallParams = @{
     Protocol    = 'TCP'
 }
 New-NetFirewallRule @firewallParams
+
+winrm quickconfig
