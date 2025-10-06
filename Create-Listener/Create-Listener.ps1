@@ -1,3 +1,6 @@
+# Set connection to private
+Get-netconnectionProfile | Set-NetConnectionProfile -networkcategory "Private"
+
 # Create self signed certificate
 $certParams = @{
     CertStoreLocation = 'Cert:\LocalMachine\My'
