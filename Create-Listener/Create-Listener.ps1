@@ -1,6 +1,8 @@
 # Set connection to private
 Get-netconnectionProfile | Set-NetConnectionProfile -networkcategory "Private"
 
+winrm quickconfig
+
 # Create self signed certificate
 $certParams = @{
     CertStoreLocation = 'Cert:\LocalMachine\My'
@@ -37,4 +39,4 @@ $firewallParams = @{
 }
 New-NetFirewallRule @firewallParams
 
-winrm quickconfig
+
